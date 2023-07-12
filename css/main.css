@@ -1,0 +1,570 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p,span,a{
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.caption h3{
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    z-index: 0;
+}
+ .caption h3::after{
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    left: -3px;
+    bottom: -4px;
+    z-index: -1;
+}
+a{
+    color: #000;
+}
+/* --------------start navbar --------------*/
+nav a{
+    color: #000 !important;
+}
+nav .navbar-brand{
+    font-size: 28px;
+}
+#navbar-example2{
+    background-color: #ffffff !important;
+    color: #000!important;
+}
+nav .hover::before {
+    content: '';
+    width: 0;
+    height: 2px ;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    background-color: #000!important;
+    transition: 0.5s;
+}
+nav .hover{
+    position: relative;
+}
+.navbar .active:before{
+    width: 50px!important;
+}
+
+nav .active {
+    background-color: transparent !important;
+}
+nav ul li{
+    margin-right: 30px;
+}
+/* --------------end navbar --------------*/
+/* --------------start home --------------*/
+#home{
+    background: linear-gradient(#000000a6  , #000000a6) , url('../imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 80px;
+}
+#home h5{
+    font-size: 50px;
+    font-weight: 800;
+}
+#home span{
+    font-size: 60px;
+    position: relative;
+    font-weight: 200;   
+}
+#home span::after{
+    content: '';
+    animation: typing 10s  infinite ;
+    font-weight: 400;
+}
+#home .icons li a i{
+color: #fff;
+}
+#home .icons li {
+    background: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes typing{
+    0%{content: '|';}
+    1.5%{content: 'L|';}
+    3%{content: 'La|';}
+    4.5%{content: 'Larr|';}
+    6%{content: 'Larry|';}
+    7.5%{content: 'Larry D|';}
+    9%{content: 'Larry Dan|';}
+    10.5%{content: 'Larry Dani|';}
+    12%{content: 'Larry Daniel|';}
+    13%{content: 'Larry Daniels|';}
+    18%{content: 'Larry Daniels|';}
+    19.5%{content: 'Larry Daniel|';}
+    21%{content: 'Larry Dani|';}
+    22.5%{content: 'Larry Dan|';}
+    24%{content: 'Larry D|';}
+    25.5%{content: 'Larry|';}
+    27%{content: 'Larr|';}
+    28.5%{content: 'La|';}
+    30%{content: 'L|';}
+    31.5%{content: '|';}
+    33%{content: 'D|';}
+    34.5%{content: 'De|';}
+    36%{content: 'Dev|';}
+    37.5%{content: 'Deve|';}
+    39%{content: 'Devel|';}
+    40.5%{content: 'Develo|';}
+    42%{content: 'Develop|';}
+    43.5%{content: 'Develope|';}
+    44%{content: 'Developer|';}
+    50%{content: 'Developer|';}
+    51.5%{content: 'Develope|';}
+    53%{content: 'Develop|';}
+    54.5%{content: 'Develo|';}
+    56%{content: 'Devel|';}
+    57.5%{content: 'Deve|';}
+    59%{content: 'Dev|';}
+    60.5%{content: 'De|';}
+    62%{content: 'D|';}
+    63.5%{content: '|';}
+    65%{content: 'D|';}
+    66.5%{content: 'De|';}
+    68%{content: 'Des|';}
+    69.5%{content: 'Desi|';}
+    71%{content: 'Desig|';}
+    72.5%{content: 'Design|';}
+    74%{content: 'Designe|';}
+    75%{content: 'Designer|';}
+    82.5%{content: 'Designer|';}
+    84.5%{content: 'Designe|';}
+    87%{content: 'Design|';}
+    88.5%{content: 'Desig|';}
+    92%{content: 'Desi|';}
+    94%{content: 'Des|';}
+    96%{content: 'De|';}
+    98%{content: 'D|';}
+    100%{content: '|';}
+    
+}
+/* --------------end home --------------*/
+
+/* --------------start about --------------*/
+#about{
+    margin-bottom: 80px;
+}
+#about img{
+    width: 100%;
+}
+#about .hero-img{
+    position: relative;
+    padding-left: 30px;
+}
+#about .hero-img::after{
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    left: 0;
+    bottom: -30px;
+    z-index: -1;
+}
+#about .text span{
+    color: #999999;
+}
+#about .text p{
+    line-height: 1.6;
+    margin: 30px 0;
+    width: 85%;
+}
+.item{
+    background-color: #F6F6F6;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.item-bar{
+    border-radius: 5px;
+    padding: 0 10px;
+}
+#about .buttons .button-1 , #about .buttons .button-2 {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+#about .buttons .button-2{
+    border: 1px solid #000;
+    background-color: transparent;
+}
+#about .buttons .button-2:hover{
+    background-color: #000;
+}
+#about .buttons .button-2:hover a{
+    color: #fff!important;
+}
+#about .buttons .button-1:hover{
+    background-color: transparent!important;
+    border: 1px solid #000;
+    color: #000!important;
+}
+/* --------------end about --------------*/
+
+/* --------------Start Services --------------*/
+#services{
+    background-color: #F7F7F7;
+    padding: 80px 0;
+}
+#services .card{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    border: none;
+
+}
+#services .icon{
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    background-color: #F1F1F1;
+    transition: 0.5s;
+}
+#services .card-title{
+    font-weight: 800;
+}
+#services .card p{
+    width: 90%;
+    margin: auto;
+}
+#services .icon:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* --------------end Services --------------*/
+
+/* --------------start Portfolio --------------*/
+#portfolio .head ul{
+    gap: 40PX;
+    font-weight: 900;
+}
+#portfolio .vip::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    top: 27px;
+    left: 0;
+}
+#portfolio img{
+    width: 100%;
+}
+#portfolio .layer{
+    width: 96%;
+    height: 96%;
+    top: 0;
+    z-index: 3;
+    color: #000;
+    left: 2%;
+    top: 6%;
+    transition:all 0.5s;
+    background-color: transparent;
+}
+
+#portfolio .layer ul{
+ gap: 20px;
+ transform: translateY(8px);
+ transition: 0.5s;
+}
+#portfolio .layer h6{
+    transform: translateY(-8px);
+    transition: 0.5s;
+    color: transparent;
+}
+#portfolio .layer li{
+    background-color: transparent;
+    color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+#portfolio .section-part:hover .layer{
+    background-color: #fff;
+    left: 2%;
+    top: 2%;
+}
+#portfolio .section-part:hover ul{
+ transform: translateY(-2px);
+}
+#portfolio .section-part:hover h6{
+    transform: translateY(2px);
+    color: #000;
+   }
+
+#portfolio .section-part:hover li{
+    background-color: #000;
+    color: #fff;
+}
+#portfolio .section-part li:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+/* --------------end Portfolio --------------*/
+/* --------------start testimonial-------------- */
+#testimonial{
+    background-color: #F7F7F7;
+    margin-top: 40px;
+    padding: 80px 0;
+    height: 100%;
+}
+#testimonial .carousel-inner{
+    padding: 70px 0;
+}
+#testimonial .carousel-item img{
+    width: 150px ;
+    border-radius: 50%;
+}
+#testimonial .carousel-item span{
+    font-size: 12px;
+    color: #748182;
+}
+#testimonial .curousel-caption p{
+    font-size: 20px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 25px;
+    color: #748182;
+}
+#testimonial .border{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+#testimonial button{
+    background-color:  #869791;;
+}
+/* --------------end testimonial-------------- */
+
+/* --------------start countre-------------- */
+#counter P{
+    color: #748182;
+}
+#counter h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+/* --------------end countre-------------- */
+
+/* --------------start our team-------------- */
+#team{
+    background-color: #F7F7F7;
+    padding: 80px 0;
+}
+#team .card{
+    border-radius: 5px!important;
+}
+#team .caption h3{
+    margin-bottom: 80px;
+}
+#team .card-body h4{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+#team .card-body h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+#team .card-body{
+    background-color: #343434;
+    border-radius: 5px!important;
+}
+#team .layer{
+    width: 97%;
+    height: 79%;
+    top: 1%;
+    left: 1.5%;
+    transition: 0.7s;
+    transform: rotateY(180deg);
+    background-color: transparent;
+}
+#team .layer ul li{
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: 0.7s;
+}
+#team .layer ul li a{
+color: transparent;
+transition: 0.7s;
+}
+#team .card:hover .layer{
+    background-color: #ffffffde;
+    transform: rotateY(360deg);
+}
+#team .card:hover .layer ul li a{
+    color: #fff;
+    }
+#team .card:hover .layer ul li {
+    background-color: #000;
+}
+#team .card .img img{
+    transition: 0.5s;
+}
+#team .card:hover img{
+    scale: 1.2;
+}
+#team .card .layer ul li:hover{
+    background-color: transparent;
+    border: 2px solid #000;
+}
+#team .card .layer ul li:hover a{
+color: #000;
+}
+
+/* --------------end our team-------------- */
+
+/* --------------end contact-------------- */
+#contact{
+    padding: 40px;
+}
+#contact .icon{
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    background-color: #F1F1F1;
+    transition: 0.5s;
+}
+#contact .icon:hover{
+    background-color: #000;
+    color: #fff;
+}
+#contact .text-center h6{
+    color: #343434;
+}
+#contact .text-center p{
+    color: #748182;
+}
+.mt-80{
+    margin-top: 80px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+#contact .container{
+    padding: 0 85px;
+}
+
+#contact form input{
+    background-color: #F4F4F4;
+    width: 48%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#contact form textarea{
+    margin-bottom: 25px;
+    padding: 10px;
+    outline: none;
+    max-height:200px ;
+    min-width: 100%;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 5px;
+    resize: both;
+}
+#contact form button{
+    background: #000;
+    border: 0;
+    padding: 10px 50px;
+    color: #fff;
+    transition: 0.5s;
+}
+#contact form button:hover{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* --------------end contact-------------- */
+footer p{
+    color: #748182;
+}
+.main-icon{
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.main-icon i{
+    color: #fff;
+}
+/* --------------media query-------------- */
+
+@media (max-width: 1399.98px) { 
+    #team .layer{height: 76%;}
+ }
+@media (max-width: 1199.98px) {  
+    #team .layer{height: 73%;}
+}
+@media (max-width: 1170.98px) {  
+    #home span{font-size: 44px;}
+    #team .layer{height: 73%;}
+}
+@media (max-width: 991.98px) {
+ #team .layer{height: 75%;}
+ #contact form input{width: 100%;}
+ #contact .container{padding: 0 0;}
+}
+@media (max-width: 767.98px) { 
+    #team .layer{height: 82%;}
+    #home span{font-size: 30px;}
+}
+@media (max-width: 575.98px) {  
+}
+@media (max-width: 520.98px) { 
+    #team .layer{height: 80.5%;}
+}
+
+
+
